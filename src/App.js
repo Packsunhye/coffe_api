@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+import {
+  HeaderCont,
+  MainConts,
+  RandomConts,
+  CoffeViewConts,
+  ListConts,
+  SelectConts,
+  SelectViewConts,
+  SearchConts,
+} from "./components";
+
+// import MainConts from './components/MainConts'
+// import VideoConts from './components/VideoConts'
+// import ChannelConts from './components/ChannelConts'
+// import SearchConts from './components/SearchConts'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <HeaderCont />
+      <Routes>
+        <Route path="/" element={<MainConts />}></Route>
+        <Route path="/random/" element={<RandomConts />}></Route>
+        <Route path="/coffeView/:id" element={<CoffeViewConts />}></Route>
+        <Route path="/List/:id" element={<ListConts />}></Route>
+        <Route path="/select/" element={<SelectConts />}></Route>
+        <Route path="/selectview/:id" element={<SelectViewConts />}></Route>
+        <Route path="/search/:searchTerm" element={<SearchConts />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

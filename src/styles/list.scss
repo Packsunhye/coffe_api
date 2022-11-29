@@ -1,0 +1,125 @@
+/* beverage__list */
+#beverage__list {
+    margin-top: 130px;
+
+    h2 {
+        text-align: center;
+        font-size: 38px;
+        margin-bottom: 50px;
+
+        .searchIcon {
+            img {
+                width: 4%;
+            }
+        }
+    }
+}
+
+.list__wrap {
+    background: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    padding: 65px 88px;
+
+    .list__cont {
+        h3 {
+            font-size: 22px;
+            padding: 10px;
+        }
+
+        .listSelects {
+            border-top: 3px solid #C1E5D3;
+            border-bottom: 3px solid #C1E5D3;
+            padding: 22px 130px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            button {
+                display: inline-block;
+                padding: 10px 30px;
+                border-radius: 10px;
+                color: #ffffff;
+                font-size: 22px;
+
+                &.starbucks {
+                    background: #173831;
+                }
+                
+                &.tomtoms {
+                    background: #572A31;
+                }
+                
+                &.paik {
+                    background: #0E347E;
+                }
+                
+                &.yoger {
+                    background: #AB1A2D;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+.listCard {
+    padding: 130px 20px;
+    column-count: 4;
+    column-gap: 20px;
+    width: 100%;
+    text-align: center;
+    word-break: keep-all;
+
+    .listDesc {
+        a {
+            img {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 22px;
+            }
+
+            .beverageName {
+                font-size: 20px;
+                height: 70px;
+                width: 70%;
+                margin: 0 auto;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
+
+
+.list__count {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.list__count ul li {
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    background: #564527;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+.list__count ul li a {
+    color: #ffffff;
+}
+
+.list__count ul li.active {
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+.list__count ul li.active a {
+    color: #564527;
+}

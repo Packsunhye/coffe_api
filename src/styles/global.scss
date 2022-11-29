@@ -1,0 +1,23 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './header.scss';
+@import './main.scss';
+@import './random.scss';
+@import './select.scss';
+@import './list.scss';
+
+
+/* 변수 설정 */
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --bg-yellow: #FFF27B;
+    --bg-header: #F2D3AD;
+
+    --font-size: 18px;
+    --font-height: 1.4;
+    --font-color: #25211A;
+    --font-main: 'Cafe24Ohsquare';
+    --font-sub: 'Cafe24Ohsquareair';
+}

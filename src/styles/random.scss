@@ -1,0 +1,116 @@
+.random__view {
+    width: 1180px;
+    height: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 65px;
+
+    position: relative;
+
+    .random__inner {
+        padding: 50px 100px;
+        position: relative;
+
+        .random__restart {
+            a {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                display: flex;
+                margin-top: 2px;
+                background-color: #f4fdd9;
+                font-weight: normal;
+                padding: 10px 20px;
+                border-radius: 50px;
+                border: 1px solid #dbd382;
+
+                span {
+                    font-family: 'Cafe24Ohsquareair' !important;
+                    margin-right: 10px;
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.view__box {
+    display: flex;
+    padding-top: 60px;
+    
+    img {
+        width: 360px;
+    }
+
+    .coffee {
+        padding-left: 40px;
+
+        .coffee__name {
+            font-family: 'Cafe24Ohsquare';
+            font-size: 28px;
+            width: 100%;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #FFBB65;
+        }
+        .coffee__desc {
+            padding: 20px;
+        
+            font-family: 'Cafe24Ohsquare';
+            font-size: 18px;
+            border-bottom: 1px solid #FFBB65;
+        }
+        
+        .coffee__nutrition {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: 16px;
+            font-family: 'Cafe24Ohsquareair';
+            border-bottom: 1px solid #FFBB65;
+        }
+
+        .bottom {
+            display: flex;
+            padding: 30px 20px;
+            border-bottom: 1px solid #FFBB65;
+
+            .line_01{
+                border-right: 1px solid #FFBB65;
+                padding-right: 50px;
+
+                li {
+                    margin-bottom: 20px;
+                    font-family: 'Cafe24Ohsquareair';
+                    font-size: 16px;
+                    
+                }
+            }   
+
+            .line_02{
+                padding-left: 50px;
+
+                li {
+                    margin-bottom: 20px;
+                    font-family: 'Cafe24Ohsquareair';
+                    font-size: 16px;
+                    
+                }
+            } 
+        }
+    }
+
+    
+    
+}
+
+
+.logo__view {
+    width: 100px;
+    position: absolute;
+    bottom: 110px;
+    right: 95px;
+}
